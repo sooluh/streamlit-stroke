@@ -9,7 +9,12 @@ st.set_page_config(
 )
 
 '''
-# NeuroInsight Sentinel
+# 🧠 NeuroInsight Sentinel
+
+**Peringatan!**
+Hasil dari prediksi ini belum sempurna dan belum bisa dijadikan rujukan.
+
+---
 '''
 
 col1, col2 = st.columns(2)
@@ -67,6 +72,10 @@ smoking_unknown = 1 if smoking == 'Tidak Tahu' else 0
 submit = st.button('Cek Risiko Kanker')
 
 if submit:
+    '''
+    ---
+    '''
+
     data = [
         gender_binary, age, hypertension_binary, heart_binary, married_binary,
         glucose, bmi, work_gov, work_private, work_self, work_children,
@@ -77,6 +86,6 @@ if submit:
     result = model.predict([data])
 
     if result[0]:
-        st.warning("Innalillahi, kami mendapatkan risiko kanker")
+        st.warning("Innalillahi, kami mendeteksi risiko kanker.")
     else:
-        st.success("Alhamdulillah, kami tidak mendapatkan risiko kanker")
+        st.success("Alhamdulillah, kami tidak mendeteksi risiko kanker.")
