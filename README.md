@@ -229,7 +229,7 @@ plt.show()
 
 ![](assets/gender_stroke.png)
 
-Jelas tidak balance, untuk yang tidak terkena stroke pun sama
+Untuk yang tidak terkena stroke berdasarkan gender
 
 ```py
 stroke_cases = df[df['stroke'] == 0]
