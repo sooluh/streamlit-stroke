@@ -5,7 +5,7 @@ model = pickle.load(open('./datasets/model.sav', 'rb'))
 
 st.set_page_config(
     page_title='Prediksi Risiko Stroke - NeuroInsight Sentinel',
-    page_icon='🧮',
+    page_icon='🧠',
 )
 
 '''
