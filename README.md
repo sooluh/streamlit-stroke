@@ -398,8 +398,8 @@ digunakan untuk proses kedepannya
 
 ## Modeling
 
-Hampir selesai, disini saya melakukan modeling dengan _entropy_, sebelum itu saya coba bagi dataset
-menjadi data training dan data testing
+Hampir selesai, disini saya melakukan modeling dengan D-Tree dan menggunakan kriteria _entropy_,
+sebelum itu saya coba bagi dataset menjadi data training dan data testing
 
 ```py
 X = data.drop(['stroke'], axis=1)
